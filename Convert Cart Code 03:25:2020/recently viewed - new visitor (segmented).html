@@ -1,0 +1,417 @@
+<style>
+  .mini-cart {
+    z-index: 99999999999 !important;
+  }
+  .widget-align-left.cc-jigsaw {
+    z-index: 1 !important;
+  }
+  $color: #e2185d;
+  $color2: #ffffff;
+  $btn-height: 35px;
+  $slider-height: 250px;
+  #rand-id-recent {
+    position: fixed;
+    z-index: 9999999999;
+    width: 100%;
+    height: 250px;
+    left: 0;
+    bottom: -247px;
+    transition: 0.5s;
+    background-color: #fff;
+    border-top: 3px solid #00a84f;
+    display: none;
+
+    &.cc-opened {
+      bottom: 0;
+      box-shadow: 0px 1px 19px 3px #00000054;
+      .cc-toogle-btn {
+        top: -38px;
+      }
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+    .cc-toogle-btn {
+      position: absolute;
+      right: 50px;
+      top: -35px;
+      height: 35px;
+      padding: 8px 25px;
+      color: #fff;
+      background-color: #00a84f;
+      font-family: Arial;
+      font-size: 16px;
+      border: none;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      cursor: pointer;
+      outline: none;
+    }
+    .cc-arrow {
+      width: 20px;
+      vertical-align: middle;
+      transform: rotate(180deg);
+      margin-left: 15px;
+      transition: 0.5s;
+      stroke: $color2;
+      display: inline-block;
+      border-radius: 50%;
+    }
+    &.cc-opened .cc-arrow {
+      transform: rotate(0deg);
+    }
+  }
+  /* @media only screen and (max-width: 479px) {
+    #rand-id-recent {
+      height: 250px;
+      bottom: -247px;
+      .cc-toogle-btn {
+        left: 0;
+        margin: 0 auto;
+        right: 0px;
+        width: 250px;
+      }
+    }
+  } */
+  /* @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #rand-id-recent {
+      height: 250px;
+      bottom: -247px;
+      .cc-toogle-btn {
+        left: 0;
+        margin: 0 auto;
+        right: 0px;
+        width: 260px;
+      }
+    }
+  } */
+  /* @media only screen and (min-width: 1079px) and (max-width: 1226px) {
+    #rand-id-recent {
+      height: 290px;
+      bottom: -287px;
+    }
+  }
+  @media only screen and (min-width: 899px) and (max-width: 1079px) {
+    #rand-id-recent {
+      height: 290px;
+      bottom: -287px;
+    }
+  } */
+</style>
+<cc-snippet prepend-to="body">
+  <div id="rand-id-recent">
+    <button class="cc-toogle-btn">
+      Recently Viewed
+      <img class="cc-arrow" src="https://cdn.convertcart.com/uploads/ce7a46f6.png" />
+    </button>
+  </div>
+</cc-snippet>
+<cc-snippet name="slider">
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Roboto");
+    * { box-sizing: border-box; }
+    body, button, input {
+      font-size: 14px;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      height: $slider-height;
+      overflow: hidden;
+    }
+    .cc-slider-wrap {
+      padding: 0px 130px 15px;
+    }
+    .cc-slider {
+      overflow: hidden;
+    }
+    .cc-slider > div {
+      margin: 0 auto;
+    }
+    a, a:hover {
+      text-decoration: none;
+    }
+    .cc-next, .cc-previous {
+      cursor: pointer;
+      position: absolute;
+      padding: 20px 10px;
+      z-index: 1;
+      top: 35%;
+      display: none;
+      &:hover {
+        background: #ccc;
+      }
+      svg {
+        stroke: $color;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .cc-next {
+      right: 30px;
+    }
+    .cc-previous {
+      left: 30px;
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+    .cc-product-inner {
+      display: block;
+      margin: 10px 8px;
+      max-width: 300px;
+      padding: 0px 0px 10px 0px;
+      cursor: default;
+    }
+    .cc-product-inner:hover {
+      cursor: default;
+    }
+    .cc-product-image {
+      text-align: center;
+      display: block;
+      margin: 15px 15px 0px 15px;
+      img {
+        max-width: 130px;
+        max-height: 130px;
+      }
+    }
+    .cc-product-but {
+      background: #1eb66f;
+      color: #fff;
+      border: 1px solid #1eb66f;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 8px 0;
+      width: 118px;
+      margin: 10px auto 0;
+      display: block;
+      font-family: Oswald, sans-serif;
+      text-align: center;
+      font-size: 12px;
+    }
+    .cc-product-name {
+      display: block;
+      text-align: center;
+      color: #000;
+      overflow: hidden;
+      font-size: 13px;
+      line-height: 20px;
+      font-family: Lato, sans-serif;
+      padding: 10px 20px;
+      height: 50px;
+    }
+    .cc-product-price {
+      padding: 0px 0 0;
+      color: #000;
+      cursor: default;
+      font-family: sans-serif;
+      text-align: center;
+      font-weight: 700;
+      margin: 10px 0 0;
+      font-size: 16px;
+    }
+    /* @media only screen and (max-width: 479px) {
+      .cc-slider-wrap {
+        padding: 0 50px 15px;
+      }
+      .cc-product-image img {
+        width: 110px;
+        height: 110px;
+      }
+      .cc-product-name {
+        font-size: 13px;
+        line-height: 18px;
+        height: 61px;
+      }
+      .cc-product-image {
+        margin: 15px auto 0;
+        width: 110px;
+      }
+      .cc-previous {
+        left: 20px !important;
+      }
+      .cc-next {
+        right: 20px !important;
+      }
+      .cc-next, .cc-previous {
+        img {
+          width: 18px !important;
+        }
+      }
+    } */
+    /* @media only screen and (min-width: 1798px) and (max-width: 2023px) {
+      .cc-slider-wrap {
+        padding: 0px 240px 15px;
+      }
+    }
+    @media only screen and (min-width: 1079px) and (max-width: 1226px) {
+      .cc-product-name {
+        font-size: 11px;
+        padding: 6px 7px 5px;
+        line-height: 15px;
+      }
+      .cc-product-inner {
+        margin: 12px 8px;
+      }
+      .cc-product-image img {
+        max-width: 110px;
+        max-height: 110px;
+      }
+    }
+    @media only screen and (min-width: 899px) and (max-width: 1079px) {
+      .cc-product-image img {
+        max-width: 108px;
+        max-height: 108px;
+      }
+      .cc-product-name {
+        max-height: 90px;
+        height: 90px;
+      }
+      .cc-product-price {
+        padding: 5px 0 0;
+        font-size: 11px;
+      }
+    } */
+  </style>
+  <div class="cc-slider-wrap">
+    <div class="cc-next">
+      <svg class="cc-arrow" viewBox="0 0 6.3 10.6">
+        <path d="M.6.5l4.7 4.8L.6 10" fill="none" stroke-width="1.3"/>
+      </svg>
+    </div>
+    <div class="cc-previous">
+      <svg class="cc-arrow" viewBox="0 0 6.3 10.6">
+        <path d="M.6.5l4.7 4.8L.6 10" fill="none" stroke-width="1.3"/>
+      </svg>
+    </div>
+    <div class="cc-slider">
+    </div>
+  </div>
+</cc-snippet>
+<cc-snippet name="product">
+  <div class="cc-product">
+    <div class="cc-product-inner">
+      <a class="cc-product-image" target="_blank" href="#">
+        <img />
+      </a>
+      <a class="cc-product-name" target="_blank" href="#">
+        <img />
+      </a>
+      <div class="cc-product-price"></div>
+    </div>
+  </div>
+</cc-snippet>
+<cc-snippet name="iframe">
+  <iframe data-cc-src="slider" frameborder="0" ></iframe>
+</cc-snippet>
+<script>
+  const Siema = require('siema');
+  const $ = require('zepto');
+  const { ctx, randId, snippets } = campaign;
+  let iframeInserted = false;
+  let products;
+  const jrecent = $(`#${randId}recent`);
+  let opened = false;
+  $('.cc-toogle-btn').on('click', () => {
+    opened = !opened;
+    jrecent.toggleClass('cc-opened', opened);
+    if ($('.cc-opened').length == 1) {
+      campaign.trigger('clicked.recentlyviewednew');
+    } else {
+      campaign.trigger('clicked.recentlyviewednew');
+    }
+    if (!iframeInserted) {
+      iframeInserted = true;
+      campaign.insertHTML('append-to', `#${randId}recent`, snippets.iframe)
+        .then(() => {
+          const jif = jrecent.find('iframe').contents();
+          const jnext = jif.find('.cc-next');
+          const jprev = jif.find('.cc-previous');
+          const jslider = jif.find('.cc-slider');
+          products.forEach((prod) => {
+            const jp = $(snippets.product);
+            const url = prod.url + '?campaignid=49327033&variant=1';
+            jp.find('.cc-product-image').attr('href', url).find('img').attr('src', prod.image);
+            jp.find('.cc-product-name').text(prod.name).attr('href', url);
+            // if (prod.name.indexOf('-') >= 0) {
+            //   prod.name = prod.name.substr(prod.name.indexOf('-') + 1, prod.name.length);
+            //   jp.find('.cc-product-name').text(prod.name).attr('href', url);
+            // } else {
+            //   jp.find('.cc-product-name').text(prod.name).attr('href', url);
+            // }
+            jp.find('.cc-product-but').attr('href', url);
+            jp.find('.cc-product-price').text(`$${(prod.price || 0).toFixed(2)}`);
+            // jp.find('.cc-product-name').text(prod.name.substr(0, 50) + '...').attr('href', url);
+            jp.appendTo(jslider);
+          });
+          setTimeout(function () {
+            const slider = new Siema({
+              selector: jslider.get(0),
+              perPage: {
+                320: 1,
+                480: 2,
+                768: 4,
+                992: 4,
+                loop: true,
+              },
+            });
+            if (products.length > 4) {
+              /* if (slider.currentSlide + slider.perPage == slider.perPage) {
+                jprev.show();
+              }
+              if (products.length == slider.currentSlide + slider.perPage) {
+                jnext.show();
+              } */
+              jnext.show();
+            } else {
+              jprev.hide();
+              jnext.hide();
+            }
+            jnext.on('click', () => {
+              slider.next();
+              campaign.trigger('Clicked.next');
+              if (products.length > 4) {
+                jprev.show();
+                if (products.length == slider.currentSlide + slider.perPage) {
+                  jnext.hide();
+                } else {
+                  jnext.show();
+                }
+              }
+            });
+            jprev.on('click', () => {
+              slider.prev();
+              campaign.trigger('Clicked.prev');
+              if (products.length > 4) {
+                jnext.show();
+                if (slider.currentSlide + slider.perPage == slider.perPage) {
+                  jprev.hide();
+                } else {
+                  jprev.show();
+                }
+              }
+            });
+            jif.find('.cc-product-image').on('click', () => {
+              campaign.trigger('Clicked.productnew');
+              // console.log('click');
+            });
+            jif.find('.cc-product-but').on('click', () => {
+              campaign.trigger('Clicked.addtocart');
+              // console.log('click');
+            });
+            jif.find('.cc-product-name').on('click', () => {
+              campaign.trigger('Clicked.productnew');
+              // console.log('click1');
+            });
+            $('#hubspot-messages-iframe-container').addClass('cc-jigsaw');
+          }, 100);
+        });
+    }
+  });
+  ctx.ccart('get', 'productsViewed', (iproducts) => {
+    console.log(iproducts);
+    products = iproducts.slice(-8) || [];
+    jrecent.toggle(!!products.length);
+  });
+</script>

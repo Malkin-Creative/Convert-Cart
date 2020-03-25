@@ -1,0 +1,678 @@
+<style>
+  .products-featured.section {
+    .slick-list.draggable {
+      overflow: initial;
+    }
+  }
+  .products-featured .product-item-thumbnail {
+    margin-right: 0px !important;
+  }
+  #featured-products .slick-track .slick-slide {
+    width: 25% !important;
+    padding: 0px 10px !important;
+    .product-grid-item.product-block {
+      /* background-image: linear-gradient(#fff, #f4f4f4); */
+      background-image: linear-gradient(-180deg, #fff 50%, #e7e7e7 100%);
+      border: 1px solid #dde;
+      border-radius: 15px;
+      box-shadow: 0 0 5px #c0c0c0;
+      .product-item-thumbnail {
+        border: 0px;
+        box-shadow: none;
+        background: transparent;
+        transition: all 0s ease;
+        /* padding: 4% 4% 0% 4%; */
+        padding: 4%;
+      }
+      .product-item-thumbnail:hover {
+        border: 0px;
+        box-shadow: none;
+        transform: scale(1);
+      }
+      .short-description-Short-Description {
+        display: none;
+      }
+      .product-item-details {
+        display: block;
+        font-size: 0px;
+        padding: 0px 15px 15px 15px;
+        .new_detail {
+          .title_new {
+            height: 80px;
+            vertical-align: top;
+            .product-item-title {
+              font-size: 15px;
+              margin: 0;
+              padding: 0;
+              text-align: left;
+              color: #000000;
+              font-weight: 600;
+              line-height: 24px;
+            }
+            .product-item-rating {
+              font-size: 15px;
+              text-align: left;
+              margin-top: 3px;
+            }
+          }
+          .desc_new {
+            height: 120px;
+            ul {
+              margin: 0px;
+              list-style: none;
+              padding: 0px;
+              font-size: 0px;
+              padding-left: 20px;
+              li {
+                margin: 0px;
+                padding: 0px;
+                text-align: left;
+                line-height: 18px;
+                margin-bottom: 5px;
+                font-size: 14px;
+                list-style: disc;
+              }
+            }
+          }
+          .btn_new {
+            font-size: 0px;
+            width: 100%;
+            display: block;
+            vertical-align: top;
+            div.first_new {
+              display: inline-block;
+              width: 50%;
+              text-align: left;
+              vertical-align: top;
+              .product-item-price {
+                font-size: 30px;
+                color: #000000;
+                margin: 0px;
+                font-weight: 600;
+              }
+              .short-description-Short-Dosage {
+                display: block;
+                top: -5px;
+                vertical-align: top;
+                p {
+                  margin: 0px;
+                  text-transform: capitalize;
+                }
+              }
+            }
+            div.last-new {
+              display: inline-block;
+              width: 50%;
+              text-align: right;
+              vertical-align: middle;
+              a.btn {
+                font-size: 13px;
+                color: #fff;
+                background: #72c168;
+                background: -webkit-linear-gradient(top, #72c168, #b4d88b);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#72c168', endColorstr='#b4d88b', GradientType=0);
+                zoom: 1;
+                background-clip: padding-box;
+                padding: 10px 7px;
+                display: block;
+                text-align: center;
+                border-radius: 50px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .category {
+    .product-listing-grid .listing-wrapper {
+      .product-grid-item.product-block {
+        background-image: linear-gradient(-180deg,#fff 50%,#e7e7e7);
+        border-radius: 15px;
+        border: 1px solid #dde;
+        box-shadow: 0 0 5px #c0c0c0;
+        .product-item-thumbnail {
+          border: 0px;
+          box-shadow: none;
+          background: transparent;
+          transition: all 0s ease;
+        }
+        .product-item-thumbnail:hover {
+          border: 0px;
+          box-shadow: none;
+          transform: scale(1);
+        }
+        .short-description-Short-Description {
+          display: none;
+        }
+        .product-item-details {
+          display: block;
+          font-size: 0px;
+          padding: 15px;
+          .new_detail {
+            .title_new {
+              height: 80px;
+              vertical-align: top;
+              .product-item-title {
+                font-size: 16px;
+                margin: 0;
+                padding: 0;
+                text-align: left;
+                color: #000000;
+                font-weight: 600;
+                line-height: 24px;
+              }
+              .product-item-rating {
+                font-size: 15px;
+                text-align: left;
+                margin-top: 3px;
+              }
+            }
+            .desc_new {
+              height: 120px;
+              ul {
+                margin: 0px;
+                list-style: none;
+                padding: 0px;
+                font-size: 0px;
+                padding-left: 20px;
+                li {
+                  list-style: disc;
+                  margin: 0px;
+                  padding: 0px;
+                  text-align: left;
+                  line-height: 20px;
+                  margin-bottom: 5px;
+                  font-size: 14px;
+                }
+              }
+            }
+            .btn_new {
+              font-size: 0px;
+              width: 100%;
+              display: block;
+              vertical-align: top;
+              div.first_new {
+                display: inline-block;
+                width: 50%;
+                text-align: left;
+                vertical-align: top;
+                .product-item-price {
+                  font-size: 25px;
+                  color: #000000;
+                  margin: 0px;
+                  font-weight: 600;
+                }
+                .short-description-Short-Dosage {
+                  display: block;
+                  top: -5px;
+                  vertical-align: top;
+                  p {
+                    margin: 0px;
+                    text-transform: capitalize;
+                  }
+                }
+              }
+              div.last-new {
+                display: inline-block;
+                width: 50%;
+                text-align: right;
+                vertical-align: middle;
+                a.btn {
+                  font-size: 13px;
+                  color: #fff;
+                  background: #72c168;
+                  background: -webkit-linear-gradient(top, #72c168, #b4d88b);
+                  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#72c168', endColorstr='#b4d88b', GradientType=0);
+                  zoom: 1;
+                  background-clip: padding-box;
+                  padding: 10px 7px;
+                  display: block;
+                  text-align: center;
+                  border-radius: 50px;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 1101px) and (max-width: 1220px) {
+    #featured-products .slick-track .slick-slide .product-grid-item.product-block .product-item-details .new_detail .title_new {
+      height: 90px;
+    }
+    #featured-products .slick-track .slick-slide .product-grid-item.product-block .product-item-details .new_detail .title_new .product-item-title {
+      display: block;
+      line-height: 20px;
+      font-size: 15px;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1100px) {
+    .slick-track .slick-slide .product-grid-item.product-block .product-item-details .new_detail .desc_new {
+      height: 175px;
+    }
+    .slick-track .slick-slide .product-grid-item.product-block .product-item-details .new_detail .btn_new {
+      min-height: 100%;
+      max-height: 100%;
+      div.first_new, div.last-new {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    #featured-products .slick-track .slick-slide .product-grid-item.product-block .product-item-details .new_detail .btn_new div.last-new a.btn {
+      font-size: 10px;
+      padding: 7px 0px;
+      margin-left: 10px;
+    }
+    #featured-products .slick-track .slick-slide .product-grid-item.product-block .product-item-details .new_detail .title_new {
+      height: 90px;
+    }
+    #featured-products .slick-track .slick-slide .product-grid-item.product-block .product-item-details .new_detail .title_new .product-item-title {
+      font-size: 14px;
+      display: block;
+      line-height: 18px;
+    }
+    #featured-products .slick-track .slick-slide .product-grid-item.product-block .product-item-details .new_detail .btn_new div.last-new {
+      width: 45% !important;
+    }
+    #featured-products .slick-track .slick-slide .product-grid-item.product-block .product-item-details .new_detail .btn_new div.first_new .short-description-Short-Dosage p {
+      font-size: 11px;
+    }
+    #featured-products .slick-track .slick-slide .product-grid-item.product-block .product-item-details .new_detail .btn_new div.first_new .product-item-price {
+      font-size: 25px;
+    }
+    #featured-products .slick-track .slick-slide .product-grid-item.product-block .product-item-details .new_detail .desc_new {
+      height: 150px;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1140px) {
+    .category .product-listing-grid .listing-wrapper .product-grid-item.product-block .product-item-details .new_detail .desc_new {
+      height: 160px;
+    }
+    .category .product-listing-grid .listing-wrapper .product-grid-item.product-block .product-item-details .new_detail .title_new .product-item-title {
+      font-size: 14px;
+      display: block;
+      line-height: 17px;
+    }
+    .category .product-listing-grid .listing-wrapper .product-grid-item.product-block .product-item-details .new_detail .title_new {
+      height: 85px;
+      vertical-align: top;
+    }
+
+  }
+</style>
+<cc-snippet name="productdata">
+  <div class="new_detail">
+    <div class="title_new">
+    </div>
+    <div class="desc_new">
+      <ul>
+      </ul>
+    </div>
+    <div class="btn_new">
+      <div class="first_new"></div>
+      <div class="last-new">
+        <a class="btn" href="">Learn More...</a>
+      </div>
+    </div>
+  </div>
+</cc-snippet>
+<cc-snippet name="tags">
+   <li></li>
+</cc-snippet>
+<script wait-for=".site-footer">
+  function waitForJQuery(cb) {
+    if (window.jQuery) cb(window.jQuery);
+    else setTimeout(waitForJQuery, 100, cb);
+  }
+  waitForJQuery(($) => {
+    setTimeout(() => {
+      var products = [
+        {
+          prodlinks: ['MagSRT® (Jigsaw Magnesium w/SRT®)'],
+          prodtype: ['Relieves stiff muscles*', 'Boosts energy*', 'Improves mood*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw MagPure™ Brain Boost'],
+          prodtype: ['Supports healthy brain function*', 'Enhance learning ability*', 'Healthy memory*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Probiotics - Essential Blend™'],
+          prodtype: ['Promotes a healthy immune system*',
+            'Supports healthy digestion*', 'Restores friendly bacteria after antibiotics*',
+          ],
+        },
+        {
+          prodlinks: ['Purely-E'],
+          prodtype: ['Reduces cellular aging.*', 'Provides potent antioxidant protection.*', 'Supports healthy hair, skin and nails.*',
+          ],
+        },
+        {
+          prodlinks: ['MagSoothe'],
+          prodtype: ['Sleep better tonight*',
+            'Ultra-calming/Fast acting*', 'Relaxes legs, muscles and brain*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw MagSoothe™ - Tart Raspberry Lemonade Packets'],
+          prodtype: ['Sleep better tonight*',
+            'Ultra-calming/Fast acting*', 'Relaxes legs, muscles and brain*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw MagSoothe™ - Tart Raspberry Lemonade (Jar)'],
+          prodtype: ['Sleep better tonight*',
+            'Ultra-calming/Fast acting*', 'Relaxes legs, muscles and brain*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Magnesium w/SRT® (B-Free)'],
+          prodtype: ['Relieves stiff muscles*',
+            'Boosts energy/Improves Mood*', 'No B vitamins added',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Electrolyte Supreme™ - Lemon-Lime (Jar)'],
+          prodtype: ['Hydrate, Energize & Replenish*',
+            'Supports athletic recovery*', 'Supports healthy muscle tone & function*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Electrolyte Supreme™ - Berry-Licious (Jar)'],
+          prodtype: ['Hydrate, Energize & Replenish*',
+            'Supports athletic recovery*', 'Supports healthy muscle tone & function*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Electrolyte Supreme™ - Berry-Licious (Packets)'],
+          prodtype: ['Hydrate, Energize & Replenish*',
+            'Supports athletic recovery*', 'Supports healthy muscle tone & function*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Electrolyte Supreme™ - Lemon-Lime (Packets)'],
+          prodtype: ['Hydrate, Energize & Replenish*',
+            'Supports athletic recovery*', 'Supports healthy muscle tone & function*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Activated B w/SRT®'],
+          prodtype: ['Healthy energy -- all day!*',
+            'Supports mental alertness, focus, & memory*', 'Supports optimum B12 levels*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Pureway-C® + Lysine'],
+          prodtype: ['Immune system support*',
+            'Supports healthy metabolism/energy*', 'Supports adrenal function*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw CoQ10 w/SRT®'],
+          prodtype: ['Support a healthy heart*',
+            'Promotes healthy energy levels & stamina*', 'Supports healthy brain & neurological function*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Alaskan Cod Liver Oil™'],
+          prodtype: ['Supports immune function*',
+            'Supports brain power, skin & eyes*', 'Heart health/healthy liver*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Adrenal Cocktail™ + Wholefood Vitamin C (Jar)'],
+          prodtype: ['Supports balanced response to stress*',
+            'Supports steady energy production*', 'Helps reduce bloating*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Adrenal Cocktail™ + Wholefood Vitamin C (Capsules)'],
+          prodtype: ['Supports balanced response to stress*',
+            'Supports steady energy production*', 'Helps reduce bloating*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Adrenal Cocktail™ + Wholefood Vitamin C (Packets)'],
+          prodtype: ['Supports balanced response to stress*',
+            'Supports steady energy production*', 'Helps reduce bloating*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw MagPure™ Glycinate'],
+          prodtype: ['Calming, pure magnesium-glycinate*',
+            'Supports healthy hormone balance/female cycle*', 'Supports healthy, restful sleep*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw MagPure™ Malate'],
+          prodtype: ['Energizing, pure magnesium-malate*',
+            'Healthy muscle function*', 'Supports healthy hormone balance/female cycle*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw 5-HTP w/SRT®'],
+          prodtype: ['Enhance a healthy mood*',
+            'Improved Mood & outlook*', 'Promotes balanced stress response*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Curcumin C3 Complex®'],
+          prodtype: ['Support healthy joints*',
+            'Promote memory and learning*', 'Promote mental clarity*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Multi-Mineral - Essential Blend™'],
+          prodtype: ['Helps balance fluids in your body*',
+            'Replenishes vital minerals*', 'Maintains normal blood sugar levels*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Basic™'],
+          prodtype: ['Replenish important vitamins and minerals*',
+            'Maintain total body health*', 'Once-a-day packet',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Complete™'],
+          prodtype: ['Replenish important vitamins and minerals*',
+            'Maintain total body health*', 'Two packets-a-day for a bigger boost',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Ultimate™'],
+          prodtype: ['All benefits of Jigsaw Complete + battles free radicals*',
+            'Enhanced support of cardiovascular health*', 'Promotes healthy brain function*',
+          ],
+        },
+        {
+          prodlinks: ['Ancient Minerals Magnesium Lotion Ultra w/ MSM 5oz.'],
+          prodtype: ['Rapid absorption/skin-nourishing*',
+            'Support for joint health*',
+          ],
+        },
+        {
+          prodlinks: ['Ancient Minerals Magnesium Lotion Goodnight with Melatonin 2.5 oz'],
+          prodtype: ['Rapid absorption/skin-nourishing*',
+            'Supports restful sleep*',
+          ],
+        },
+        {
+          prodlinks: ['Cyto-Ess™'],
+          prodtype: ['Supports healthy immune response*',
+            'Balances immune system for continuous immune enhancement*', 'Safe for adults, children, lactose-intolerance',
+          ],
+        },
+        {
+          prodlinks: ['Butyrex® by T.E.Neesby'],
+          prodtype: ['Promotes healthy intestinal tract*',
+            'Supports healthy digestive function/healthy colon cells*', 'Maintains healthy GI tract*',
+          ],
+        },
+        {
+          prodlinks: ['Ancient Minerals Magnesium Lotion 5 oz.'],
+          prodtype: ['Rapid absorption/skin-nourishing*',
+            'Targets muscle cramps*', 'Approved for Root Cause Protocol',
+          ],
+        },
+        {
+          prodlinks: ['Bee Pollen'],
+          prodtype: ['Natural source of B Vitamins*', 'Approved for Root Cause Protocol'],
+        },
+        {
+          prodlinks: ['Ionic Boron'],
+          prodtype: ['Supports healthy bones and joints*',
+            'Supports normal brain function*', 'Approved for Root Cause Protocol',
+          ],
+        },
+        {
+          prodlinks: ['Desiccated Liver'],
+          prodtype: ['All the healthy benefits of liver in a capsule*',
+            'Natural source of protein, amino acids, Vit A, B Vits & iron*', 'Approved for Root Cause Protocol',
+          ],
+        },
+        {
+          prodlinks: ['Beef Liver'],
+          prodtype: ['All the healthy benefits of liver in a capsule*',
+            'Natural source of protein, amino acids, Vit A, B Vits & iron*', 'Approved for Root Cause Protocol',
+          ],
+        },
+        {
+          prodlinks: ['Diatomaceous Earth'],
+          prodtype: ['Supports a clean digestive system*',
+            'Supports healthy skin, nails, & hair*', 'Approved for Root Cause Protocol',
+          ],
+        },
+        {
+          prodlinks: ['Gamma E Mixed Tocopherols & Tocotrienols'],
+          prodtype: ['Potent antioxidant protection*',
+            'Reduce cellular aging*', 'Approved for Root Cause Protocol',
+          ],
+        },
+        {
+          prodlinks: ['Kelp - Organic Iodine'],
+          prodtype: ['Supports healthy thyroid function*', 'Natural source of Vitamins & Minerals', 'Approved for Root Cause Protocol'],
+        },
+        {
+          prodlinks: ['Rice Bran'],
+          prodtype: ['Natural source of fiber',
+            'Adds rich texture/subtle flavor to baked goods, cereals & smoothies', 'Approved for Root Cause Protocol',
+          ],
+        },
+        {
+          prodlinks: ['Taurine'],
+          prodtype: ['Supports liver health & detox*',
+            'Supports healthy aging & active lifestyle*', 'Approved for Root Cause Protocol',
+          ],
+        },
+        {
+          prodlinks: ['Aussie Trace Minerals'],
+          prodtype: ['Sourced from a guarded location',
+            'Nature’s complete electrolyte solution', 'Approved for Root Cause Protocol',
+          ],
+        },
+        {
+          prodlinks: ['RCP Phase 1'],
+          prodtype: ['Includes all Phase 1 products approved by Morley Robbins',
+            'A complete 2-month supply', 'Free shipping',
+          ],
+        },
+        {
+          prodlinks: ['RCP Phase 2'],
+          prodtype: ['Includes all Phase 2 products approved by Morley Robbins',
+            'A complete 2-month supply',
+          ],
+        },
+        {
+          prodlinks: ['RCP Phase 3'],
+          prodtype: ['Includes all Phase 3 products approved by Morley Robbins',
+            'A complete 2-month supply',
+          ],
+        },
+        {
+          prodlinks: ['Ultimate Magnesium Bundle'],
+          prodtype: ['Relaxes Muscle Tone*', 'Promotes Good Sleep*',
+            'Supports Brain Health*',
+          ],
+        },
+        {
+          prodlinks: ['Jigsaw Pureway-C® Plus™'],
+          prodtype: ['Supports immune function*',
+            'Promotes healthy aging*', 'Supports a healthy stress response*',
+          ],
+        },
+        {
+          prodlinks: ['Hydration + Recovery Bundle'],
+          prodtype: ['Support steady energy production*',
+            'Enhance hydration*', 'Promote healthy, restful sleep*',
+          ],
+        },
+      ];
+      // MagSoothe
+      // Adrenal Cocktail + Wholefood Vitamin C (all versions)
+      // Electrolyte Supreme (all versions/flavors)
+      // alert($('.listing-wrapper .product-grid-item.product-block h5.product-item-title').length);
+      var { snippets } = campaign;
+      if ($('.listing-wrapper .product-grid-item.product-block').length) {
+        $('.listing-wrapper .product-grid-item.product-block').each(function () {
+          var soul = $(this);
+          var name = $(this).find('h5.product-item-title').text().trim();
+          // alert($(this).find('h5.product-item-title').text());
+          $(this).find('.product-item-details').append($(snippets.productdata));
+          $(this).find('.new_detail .title_new').append($(this).find('h5.product-item-title').detach());
+          $(this).find('h5.product-item-title > a').attr('href', $(this).find('h5.product-item-title > a').attr('href') + '?campaignid=76361511&variant=1');
+          $(this).find('.new_detail .title_new').append($(this).find('.product-item-details > p.product-item-rating').detach());
+          // alert($(this).find('.product-item-thumbnail > a').attr('href'));
+          $(this).find('.new_detail .btn_new .first_new').append($(this).find('.product-item-price').detach());
+          // alert($(this).find('.product-item-price .price-value').text());
+          $(this).find('.new_detail .btn_new .first_new').append($(this).find('.short-description-Short-Dosage').detach());
+          const price = $(this).find('.short-description-Short-Dosage .short-description__content').text().replace('-', ' ');
+          $(this).find('.short-description-Short-Dosage .short-description__content').text(price);
+          $(this).find('.product-item-thumbnail > a').attr('href', $(this).find('.product-item-thumbnail > a').attr('href') + '?campaignid=76361511&variant=1');
+          $(this).find('.new_detail .btn_new .last-new a').attr('href', $(this).find('.product-item-thumbnail > a').attr('href'));
+          $.each(products, (i, val) => {
+            if (val.prodlinks == name) {
+              $.each(val.prodtype, (j, vl) => {
+                const schart = $(snippets.tags);
+                schart.text(vl);
+                soul.find('.desc_new ul').append(schart);
+              });
+              // alert(val.prodtype);
+            }
+          });
+        });
+      }
+      if ($('#featured-products .product-grid-item').length) {
+        $('#featured-products .product-grid-item').each(function () {
+          var soul = $(this);
+          var name = $(this).find('h5.product-item-title').text().trim();
+          // alert($(this).find('h5.product-item-title').text());
+          $(this).find('.product-item-details').append($(snippets.productdata));
+          $(this).find('.new_detail .title_new').append($(this).find('h5.product-item-title').detach());
+          $(this).find('h5.product-item-title > a').attr('href', $(this).find('h5.product-item-title > a').attr('href') + '?campaignid=76361511&variant=1');
+          $(this).find('.new_detail .title_new').append($(this).find('.product-item-details > p.product-item-rating').detach());
+          // alert($(this).find('.product-item-thumbnail > a').attr('href'));
+          $(this).find('.new_detail .btn_new .first_new').append($(this).find('.product-item-price').detach());
+          $(this).find('.new_detail .btn_new .first_new').append($(this).find('.short-description-Short-Dosage').detach());
+          $(this).find('.product-item-thumbnail > a').attr('href', $(this).find('.product-item-thumbnail > a').attr('href') + '?campaignid=76361511&variant=1');
+          $(this).find('.new_detail .btn_new .last-new a').attr('href', $(this).find('.product-item-thumbnail > a').attr('href'));
+          $.each(products, (i, val) => {
+            if (val.prodlinks == name) {
+              $.each(val.prodtype, (j, vl) => {
+                const schart = $(snippets.tags);
+                schart.text(vl);
+                soul.find('.desc_new ul').append(schart);
+              });
+              // alert(val.prodtype);
+            }
+          });
+        });
+      }
+    }, 1000);
+  });
+</script>

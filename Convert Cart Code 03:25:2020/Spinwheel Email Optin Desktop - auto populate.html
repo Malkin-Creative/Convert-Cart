@@ -1,0 +1,970 @@
+<style>
+  #hubspot-messages-iframe-container {
+    z-index: 99999999 !important;
+  }
+  .cc-first-page {
+    top: 35% !important;
+  }
+  .cc-first-close {
+    margin-top: 150px !important;
+  }
+  .jigsawhealth-20765152 {
+    .spin_content * {
+      box-sizing: border-box;
+    }
+    .spin_content {
+      position: absolute;
+      text-align: center;
+      top: 0px;
+      left: 0px;
+      width: 710px;
+      height: 100%;
+      background: #fff;
+      background-image: url(https://cdn.convertcart.com/uploads/9354966e.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .spin_wheel_sec {
+      width: 560px;
+      height: 560px;
+      padding: 20px;
+      margin: 0px auto;
+      border-radius: 50%;
+      position: absolute;
+      left: 67px;
+      top: 50%;
+      transform: translatey(-50%) translatex(-50%);
+    }
+    .spin_wheel_sec_inner {
+      width: 520px;
+      height: 520px;
+      background: transparent;
+      border-radius: 50%;
+      overflow: hidden;
+      background-image: url(https://cdn.convertcart.com/uploads/46eaad32.png);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+    .spin_text_wrapper {
+      width: 520px;
+      height: 520px;
+      z-index: 1;
+      border-radius: 50%;
+      overflow: hidden;
+      position: fixed;
+      transform: rotate(-14deg);
+      -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+    }
+    .second_step_20765152 {
+      position: relative;
+    }
+    .second_step_20765152:after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      background: url(https://cdn.convertcart.com/uploads/d27397cf.png);
+      height: 50px;
+      background-repeat: no-repeat;
+      z-index: -9;
+      bottom: -52px;
+      transform: rotate(-180deg);
+    }
+    .center_circle_shape {
+      width: 261px;
+      height: 163px;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 9;
+      top: 50%;
+      left: 0px;
+      right: 0px;
+      margin: 0 auto;
+      transform: translatey(-50%);
+    }
+    #inner-wheel {
+      -webkit-transition: all 6s cubic-bezier(0, 0.99, 0.44, 0.99);
+      -moz-transition: all 6 cubic-bezier(0, 0.99, 0.44, 0.99);
+      -o-transition: all 6s cubic-bezier(0, 0.99, 0.44, 0.99);
+      -ms-transition: all 6s cubic-bezier(0, 0.99, 0.44, 0.99);
+      transition: all 6s cubic-bezier(0, 0.99, 0.44, 0.99);
+    }
+    .spin_text_wrapper {
+      -webkit-transition: all 6s cubic-bezier(0, 0.99, 0.44, 0.99);
+      -moz-transition: all 6 cubic-bezier(0, 0.99, 0.44, 0.99);
+      -o-transition: all 6s cubic-bezier(0, 0.99, 0.44, 0.99);
+      -ms-transition: all 6s cubic-bezier(0, 0.99, 0.44, 0.99);
+      transition: all 6s cubic-bezier(0, 0.99, 0.44, 0.99);
+    }
+    .optin-form {
+      background: white;
+      width: 400px;
+      margin: 0px auto;
+      padding: 20px;
+    }
+    input,
+    input:focus,
+    button,
+    button:focus {
+      outline: none;
+    }
+    input::-ms-clear {
+      display: none;
+    }
+    .center_circle_shape_inner {
+      width: 43px;
+      height: 43px;
+      background: #068ad7;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 0px;
+      right: 0px;
+      margin: 0 auto;
+      transform: translatey(-50%);
+    }
+    /* .dot_sec {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+    .dot_sec i {
+      width: 10px;
+      height: 10px;
+      background: #068ad7;
+      border-radius: 50%;
+      display: block;
+    }
+    .dot_sec i:nth-of-type(1) {
+      position: absolute;
+      top: 5px;
+      left: 50%;
+      margin-left: -5px;
+      display: none;
+    }
+    .dot_sec i:nth-of-type(1):before {
+      content: '';
+      width: 100%;
+      height: 40px;
+      background: #fff;
+      border-radius: 10px 10px 0px 0px;
+      position: absolute;
+      top: -40px;
+      left: 0;
+    }
+    .dot_sec i:nth-of-type(2) {
+      position: absolute;
+      top: 141px;
+      right: 41px;
+      display: none;
+    }
+    .dot_sec i:nth-of-type(2):before {
+      content: '';
+      width: 100%;
+      height: 40px;
+      background: #fff;
+      border-radius: 10px 10px 0px 0px;
+      position: absolute;
+      top: -28px;
+      right: -25px;
+      transform: rotate(62deg);
+      box-shadow: 1px -2px 4px rgba(0, 0, 0, 0.26);
+    }
+    .dot_sec i:nth-of-type(3) {
+      position: absolute;
+      top: 41px;
+      right: 142px;
+    }
+    .dot_sec i:nth-of-type(3):before {
+      content: '';
+      width: 100%;
+      height: 40px;
+      background: #fff;
+      border-radius: 10px 10px 0px 0px;
+      position: absolute;
+      top: -40px;
+      left: 14px;
+      transform: rotate(31deg);
+      box-shadow: 1px -2px 4px rgba(0, 0, 0, 0.20);
+    }
+    .dot_sec i:nth-of-type(4) {
+      position: absolute;
+      bottom: 139px;
+      right: 40px;
+      display: none;
+    }
+    .dot_sec i:nth-of-type(4):before {
+      content: '';
+      width: 100%;
+      height: 40px;
+      background: #fff;
+      border-radius: 10px 10px 0px 0px;
+      position: absolute;
+      top: -3px;
+      right: -25px;
+      transform: rotate(119deg);
+      box-shadow: 1px -2px 4px rgba(0, 0, 0, 0.36);
+    }
+    .dot_sec i:nth-of-type(5) {
+      position: absolute;
+      bottom: 40px;
+      right: 140px;
+    }
+    .dot_sec i:nth-of-type(5):before {
+      content: '';
+      width: 100%;
+      height: 40px;
+      background: #fff;
+      border-radius: 10px 10px 0px 0px;
+      position: absolute;
+      top: 7px;
+      left: 14px;
+      transform: rotate(-211deg);
+      box-shadow: 1px -2px 4px rgba(0, 0, 0, 0.36);
+    }
+    .dot_sec i:nth-of-type(6) {
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      margin-left: -5px;
+      display: none;
+    }
+    .dot_sec i:nth-of-type(6):before {
+      content: '';
+      width: 100%;
+      height: 40px;
+      background: #fff;
+      border-radius: 0px 0px 10px 10px;
+      position: absolute;
+      bottom: -40px;
+      left: 0;
+    } */
+    .right_textarea {
+      position: relative;
+      width: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 50%;
+    }
+    .bottom_close {
+      margin-top: 27px;
+      text-align: right;
+      cursor: pointer;
+      float: right;
+      margin-right: -23px;
+    }
+    .bottom_close a {
+      margin: 0px;
+      font-size: 15px;
+      color: #82979a;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .bottom_close img {
+      width: 42px;
+      border-radius: 50px;
+      vertical-align: middle;
+    }
+    .bottom_close img {
+      position: relative;
+      top: 0px;
+      margin-left: 10px;
+    }
+    .-random-spin .spin-btn {
+      background: #dddddd;
+      box-shadow: none;
+      color: #aaa;
+      cursor: not-allowed;
+    }
+    .spin_text {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      z-index: 999;
+    }
+    .spin_text p {
+      color: #fff;
+      margin: 0;
+      line-height: 35px;
+      font-weight: normal;
+      font-size: 18px;
+      position: absolute;
+      font-family: Verdana, Arial, Helvetica, Sans-Serif;
+    }
+    .spin_text p > img {
+      width: 95px;
+    }
+    .spin_text p > span:nth-of-type(1) {
+      font-weight: bold;
+      font-size: 14px;
+      display: block;
+      font-style: normal;
+    }
+    .spin_text p > span:nth-of-type(2) {
+      line-height: 20px;
+    }
+    .spin_text p:nth-of-type(1) {
+      right: 190px;
+      top: 102px;
+      transform: rotate(-74deg);
+      color: #48c469;
+    }
+    .spin_text p:nth-of-type(2) {
+      right: 118px;
+      top: 138px;
+      transform: rotate(-47deg);
+    }
+    .spin_text p:nth-of-type(3) {
+      right: 83px;
+      top: 209px;
+      transform: rotate(-10deg);
+      color: #48c469;
+    }
+    .spin_text p:nth-of-type(4) {
+      right: 79px;
+      top: 291px;
+      transform: rotate(16deg);
+    }
+    .spin_text p:nth-of-type(5) {
+      right: 117px;
+      top: 361px;
+      transform: rotate(45deg);
+      color: #48c469;
+    }
+    .spin_text p:nth-of-type(6) {
+      right: 193px;
+      line-height: 20px;
+      top: 394px;
+      transform: rotate(80deg);
+    }
+    .spin_text p:nth-of-type(7) {
+      right: 260px;
+      top: 396px;
+      line-height: 21px;
+      transform: rotate(104deg);
+      color: #48c469;
+    }
+    .spin_text p:nth-of-type(8) {
+      transform: rotate(140deg);
+      top: 355px;
+      right: 348px;
+    }
+    .spin_text p:nth-of-type(9) {
+      right: 395px;
+      top: 293px;
+      transform: rotate(-195deg);
+      color: #48c469;
+    }
+    .spin_text p:nth-of-type(10) {
+      right: 400px;
+      top: 201px;
+      transform: rotate(-167deg);
+    }
+    .spin_text p:nth-of-type(11) {
+      right: 351px;
+      top: 129px;
+      transform: rotate(-132deg);
+      color: #48c469;
+    }
+    .spin_text p:nth-of-type(12) {
+      right: 268px;
+      top: 93px;
+      transform: rotate(-106deg);
+    }
+    .aaa {
+      width: 520px;
+      height: 520px;
+      background-image: url('https://cdn.convertcart.com/uploads/421da50d.png');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+    .spin_werapper-20765152 {
+      height: 100%;
+      position: fixed;
+      overflow: hidden;
+      padding-right: 25px;
+      box-sizing: content-box;
+      max-width: 100%;
+      width: 100%;
+      margin: 0px;
+      z-index: 99999999999999;
+      background: rgba(0, 0, 0, 0.76);
+    }
+    .spin_iframe {
+      min-height: 651px;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      display: block;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+    .third_level_spin .bottom_close {
+      display: none;
+    }
+    .right_logo_sec {
+      text-align: left;
+    }
+    .right_logo_sec img {
+      max-width: 70%;
+    }
+    .third_step .close_campaign {
+      margin-top: 100px;
+    }
+    .first_step_20765152 h2 {
+      font-size: 24px;
+      color: #002e38;
+      letter-spacing: 0;
+      line-height: 11px;
+      font-weight: bold;
+      padding: 0px;
+      border: 0px;
+      text-shadow: none;
+      text-align: left;
+    }
+    .first_step_20765152 ul {
+      padding-left: 18px;
+      list-style-type: disc;
+    }
+    .first_step_20765152 ul > li {
+      float: left;
+    }
+    .first_step_20765152 ul > li > img {
+      width: 20px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .first_step_20765152 ul > li > p {
+      color: #5d5d5d;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      line-height: 30px;
+      margin-top: 10px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .spin-btn_20765152 {
+      background: #e49535;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 4px;
+      padding: 13px 0;
+      letter-spacing: 1px;
+      margin-top: 47px;
+      margin-right: 138px;
+      text-transform: uppercase;
+      width: 72%;
+    }
+    .claim-btn-20765152 {
+      background: #0084d1;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 13px 0 12px;
+      letter-spacing: 1px;
+      margin-top: 25px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100%;
+      display: none;
+    }
+    .second_step_20765152 {
+      display: none;
+      height: auto;
+      width: 95%;
+      box-shadow: 0px 5px 13px 9px rgba(0, 0, 0, 0.06);
+    }
+    .second_step_20765152 h2 {
+      font-size: 25px;
+      color: #002e38;
+      letter-spacing: 0;
+      line-height: 16px;
+      margin-bottom: 18px;
+      margin-top: 10px;
+      font-weight: 700;
+      padding: 0;
+      border: 0;
+      text-shadow: none;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .second_step_20765152 h4 {
+      color: #042e3a;
+      margin: 0;
+      font-size: 15px;
+      font-weight: 500;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    .second_step_20765152 p {
+      font-size: 12px;
+      color: #585858;
+      font-weight: 500;
+      margin-top: 32px;
+      max-width: 253px;
+    }
+    .second_step_20765152 h4 span {
+      color: #042e3a;
+      font-weight: 700;
+    }
+    .second_step_20765152 .email-input {
+      background: #ffffff;
+      border: 1px solid #b5b5b5;
+      border-radius: 2px;
+      width: 92%;
+      height: 54px;
+      font-size: 12px;
+      color: #000 !important;
+      padding: 0px 10px;
+      text-align: center;
+      font-family: Verdana, Arial, Helvetica, Sans-Serif;
+      margin-bottom: 10px;
+    }
+    .second_step_20765152 .email-input:focus {
+      outline: 0;
+      border-color: #b5b5b5 !important;
+      box-shadow: none !important;
+    }
+    .second_step_20765152 .submit-btn {
+      background: #e49535;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      height: 54px;
+      letter-spacing: 1px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 92%;
+      outline: 0;
+    }
+    #check_input004 {
+      display: inline-block;
+      text-align: left;
+      padding-bottom: 10px;
+      padding-left: 13px;
+      width: 99%;
+    }
+    #check_input004 label {
+      font-size: 13px;
+      font-weight: 400;
+      color: #000;
+    }
+    #check_input004 .checkbox_label {
+      font-size: 14px;
+      font-weight: 400;
+      position: relative;
+      color: #000;
+    }
+    #check_input004 .checkbox_label a {
+      text-decoration: underline;
+      color: #000;
+      display: inline;
+      font-size: 13px;
+    }
+    #check_input004 input[type="checkbox"] {
+      appearance: checkbox;
+      margin: 0;
+    }
+    .btnDisable {
+      background: #c0c0c0 !important;
+    }
+    .subscribe_input {
+      text-align: left;
+      margin-top: -21px;
+      margin-left: 15px;
+    }
+    #ccChkAgree004_sub {
+      width: 19px;
+      height: 19px;
+      vertical-align: middle;
+    }
+    p {
+      font-size: 12px;
+      color: #585858;
+      font-weight: 500;
+      text-align: left;
+      display: inline-block;
+      margin-top: 32px;
+    }
+    .third_step_20765152 {
+      display: none;
+      padding-top: 30px;
+    }
+    .third_step_20765152 h3 {
+      color: #042e3a;
+      text-transform: none;
+      font-size: 45px;
+      margin: 0 0 5px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .third_step_20765152 p {
+      font-size: 17px;
+      color: #585858;
+      font-weight: 500;
+      text-align: left;
+      display: inline-block;
+    }
+    .third_step_20765152 .coupoun_text {
+      color: #48c469;
+      width: 65%;
+      margin: 0 auto;
+      padding: 6px 0px;
+      background: hsla(0, 0%, 96.9%, 0);
+      border: 1.5px dashed #000;
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      font-family: ProximaNova-Bold, Arial;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+    .cc-coupon-copied {
+      display: none;
+      background-color: rgba(0, 0, 0, 0.15);
+      width: 133px;
+      position: relative;
+      margin: 0 auto;
+      bottom: -5px;
+    }
+    .third_step_20765152 h4 {
+      color: #042e3a;
+      margin: 0;
+      margin-bottom: 6px;
+      font-size: 17px;
+      font-family: Verdana, Arial, Helvetica, Sans-Serif;
+      font-weight: normal;
+      text-align: left;
+    }
+    .third_step_20765152 h4 span {
+      color: #042e3a;
+      font-weight: 700;
+      font-style: italic;
+    }
+    .custom-orders {
+      font-size: 11px;
+      padding-bottom: 25px;
+      color: #042e3a;
+      text-align: left;
+    }
+    .third_step_20765152 ul {
+      padding: 0px;
+      list-style: none;
+      margin: 0px;
+    }
+    .third_step_20765152 ul > li {
+      float: left;
+      width: 100%;
+    }
+    .third_step_20765152 ul > li > img {
+      float: left;
+      margin-right: 0px;
+      width: 20px;
+      padding-top: 3px;
+    }
+    .third_step_20765152 ul > li > p {
+      margin: 0px;
+      overflow: hidden;
+      font-size: 15px;
+      color: #82979a;
+      letter-spacing: 0px;
+      line-height: 20px;
+      font-weight: bold;
+      font-family: Verdana, Arial, Helvetica, Sans-Serif;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .shop_now_btn {
+      clear: both;
+      padding-top: 0px;
+    }
+    .shop_now_btn button {
+      background: #e49535;
+      width: 46%;
+      height: 50px;
+      border: 0;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 2px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      position: static;
+    }
+    .close_campaign {
+      margin-left: 0;
+      color: #869495;
+      cursor: pointer;
+      font-size: 15px;
+      margin-top: 15px;
+    }
+    .close_campaign img {
+      margin-left: 10px;
+      position: relative;
+      top: 2px;
+    }
+    @media only screen and (min-width: 1226px) and (max-width: 1300px) {
+      .spin_iframe {
+        min-height: 597px;
+      }
+    }
+  }
+</style>
+<cc-snippet prepend-to="body">
+  <div class="jigsawhealth-20765152">
+  <div class="spin_werapper-20765152">
+    <div class="spin_iframe">
+      <div class="spin_content">
+        <div class="spin_wheel_sec" id="wheel">
+          <!-- <div class="dot_sec"><i></i><i></i><i></i><i></i><i></i><i></i></div> -->
+          <div class="center_circle_shape">
+            <img src="https://cdn.convertcart.com/uploads/b7908758.png">
+          </div>
+          <div class="aaa">
+          <div class="spin_wheel_sec_inner" id="inner-wheel">
+            <div class="spin_text_wrapper">
+              <div class="spin_text">
+                <p><span>$6 OFF</span></p>
+                <p><span>$7 OFF</span></p>
+                <p><span>$8 OFF</span></p>
+                <p><span>$9 OFF</span></p>
+                <p><span>$10 OFF</span></p>
+                <p><span>Fast <br>Delivery</span></p>
+                <p><span>Better Luck<br> Next Time</span></p>
+                <p><span>$1 OFF</span></p>
+                <p><span>$2 OFF</span></p>
+                <p><span>$3 OFF</span></p>
+                <p><span>$4 OFF</span></p>
+                <p><span>$5 OFF</span></p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="right_textarea">
+          <div class="first_step_20765152">
+            <h2>SPIN FOR A CHANCE TO SAVE</h2>
+            <ul>
+              <li>
+                <p>You're guaranteed to win something</p>
+              </li>
+              <li style="margin-top: -20px;">
+                <p>Make it count – you can only spin once</p>
+              </li>
+            </ul>
+            <button class="spin-btn_20765152" data-cc-state="spin">CLICK TO SPIN</button>
+          </div>
+          <div class="second_step_20765152">
+            <img src="https://cdn.convertcart.com/uploads/831bfde7.png">
+            <h2>Congratulations!!</h2>
+            <h4>You just won <span>$10 OFF</span> today's purchase.</h4>
+            <form data-cc-event="submitted">
+              <input class="email-input" type="email" name="emailId" placeholder="Enter your email to reveal the coupon code" required="">
+              <div id="check_input004">
+                <label>
+                    <input style="width:12px; vertical-align: middle;" type="checkbox" id= "ccChkAgree004" name="consent" value="yes">
+                    Yes, send me amazing offers.
+                </label>
+                <span class="checkbox_label">
+                  <a href="#" target="_blank">Privacy Policy</a>
+                </span>
+              </div>
+              <button class="submit-btn btnDisable" type="submit" id="ccSubmit004">Click to reveal my coupon code</button>
+              <div class="subscribe_input">
+                <input style="width:19px; vertical-align: top; height: 19px;margin-top: 32px" type="checkbox" id= "ccChkAgree004" name="consent" value="yes" Checked="checked">
+                <p>It’s fun to feel good. Our health updates and special offers can help with that!</p>
+              </div>
+            </form>
+          </div>
+          <div class="third_step_20765152">
+            <h3>Thank you</h3>
+            <p>Please use this coupon for today's purchase</p>
+            <p style="display: block;text-align: center;margin: 0px 0px 10px 0px;"> Click to copy</p>
+            <p class="coupoun_text">SPINTEN2019</p>
+            <div class="cc-coupon-copied">Coupon copied </div>
+            <div class="shop_now_btn close_campaign">
+              <button>Shop Now</button>
+            </div>
+          </div>
+          <div class="bottom_close closeSec1" data-cc-state="cancelled">
+            <a class="close_text">No, thank you </a>
+            <img src="https://cdn.convertcart.com/uploads/e0b7b4fe.jpg" width="15">
+          </div>
+          <div class="bottom_close cc-closeSec2" data-cc-event="thankclosed" style="display: none">
+            <a class="close_text">No, thank you </a>
+            <img src="https://cdn.convertcart.com/uploads/e0b7b4fe.jpg" width="15">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</cc-snippet>
+<script>
+  const $ = require('zepto');
+  var copyToClipboard = require('convertcart/utils/clipboard-copy-v2');
+  var timer;
+  const gdpr = require('convertcart/utils/gdpr');
+  const widget = $('.spin_werapper-20765152');
+  const wrap = widget.find('#inner-wheel');
+  const deg = 2488 + Math.floor(19 * Math.random());
+  widget.find('#check_input004 input').on('change',
+    e => widget.find('#ccSubmit004').toggleClass('btnDisable', !e.target.checked));
+  gdpr.showConsent(widget.find('#check_input004'));
+  function afterStop() {
+    campaign.props.onChange({ state: 'interested' });
+  }
+  // function copyCoupon() {
+  //   const style = 'position:fixed;left:-9999px;top:0';
+  //   const tmp = $('<input>', { style }).appendTo('body');
+  //   const target = tmp.val($('.cc-coupon-code').text()).focus().get(0);
+  //   target.setSelectionRange(0, target.value.length);
+  //   document.execCommand('copy');
+  //   tmp.remove();
+  //   const msg = $('.cc-coupon-copied').show();
+  //   setTimeout(() => msg.hide(), 2000);
+  // }
+  let isShown = false;
+  let isSpin = false;
+  let isSubmit = false;
+  function startSpin() {
+    wrap.css({ '-webkit-transform': `rotate(${2489}deg)`, transform: `rotate(${2490}deg)` });
+    timer = setTimeout(afterStop, 7000);
+  }
+  function afterSpin() {
+    wrap.css({ '-webkit-transform': `rotate(${2489}deg)`, transform: `rotate(${2490}deg)` });
+  }
+  function copyCoupon() {
+    copyToClipboard('SPINTEN2019');
+    const msg = $('.cc-coupon-copied').show();
+    setTimeout(() => msg.hide(), 2000);
+  }
+  $('.coupoun_text').on('click', () => {
+    campaign.trigger('CouponCopied');
+    copyCoupon();
+    $('.cc-coupon-copied').show();
+  });
+  /* function setJigCookie(cookieName, cookieValue) {
+    var now = new Date();
+    var time = now.getTime();
+    time += 3600 * 1000;
+    now.setTime(time);
+    document.cookie = cookieName + '=' + cookieValue + '; expires=' + now.toUTCString() + ';path=/';
+  } */
+  function applyCoupon() {
+    if ($('.form-coupon #couponcode').length > 0) {
+      if ($('.cart-totals-column .coupons-active').length == 0) {
+        $('.form-coupon #couponcode').val('SPINTEN2019');
+        $('.form-coupon #SideCouponCodeBox').trigger('click');
+      }
+    } else {
+      setTimeout(() => {
+        applyCoupon();
+      }, 400);
+    }
+  }
+  campaign
+    .on('shown', () => { isShown = true; })
+    .on('spin', () => {
+      if (isShown) {
+        isSpin = true;
+        startSpin();
+        setTimeout(afterSpin, 100);
+        timer = setTimeout(afterStop, 7000);
+      } else {
+        isSpin = true;
+        wrap.attr('style', '');
+        $('.spin-btn_20765152').hide();
+        $('.right_textarea').addClass('cc-first-page');
+        $('.bottom_close').addClass('cc-first-close');
+        setTimeout(afterSpin, 100);
+        timer = setTimeout(afterStop, 7000);
+      }
+    })
+    .on('cancelled', () => {
+      campaign.destroy();
+    })
+    .on('thankclosed', () => {
+      campaign.destroy();
+    })
+    .on('CouponCopied', () => {
+      copyCoupon();
+    })
+    .on('submitted', () => {
+      isSubmit -= true;
+      campaign.setState('activated');
+    })
+    .on('activated', () => {
+      // campaign.setState('activated');
+      if (isSubmit) {
+        $('.third_step_20765152').show();
+        $('.right_textarea').removeClass('cc-first-page');
+        $('.bottom_close').removeClass('cc-first-close');
+        $('.second_step_20765152').hide();
+        $('.close_text').hide();
+        $('.closeSec1').hide();
+        $('.closeSec2').show();
+        const cUrl = window.location.pathname;
+        if (cUrl.indexOf('cart.php') > 0) {
+          applyCoupon();
+        }
+      } else {
+        $('.jigsawhealth-20765152').hide();
+        $('.right_textarea').removeClass('cc-first-page');
+        $('.bottom_close').removeClass('cc-first-close');
+        const cUrl = window.location.pathname;
+        if (cUrl.indexOf('cart.php') > 0) {
+          applyCoupon();
+        }
+      }
+      // setJigCookie('SPINTEN2019');
+      /* $('.third_step_20765152').show();
+      $('.second_step_20765152').hide();
+      $('.close_text').hide(); */
+    })
+    // .on('activated', () => {
+    // })
+    .on('interested', () => {
+      if (isSpin) {
+        $('.jigsawhealth-20765152 .first_step_20765152').hide();
+        $('.right_textarea').removeClass('cc-first-page');
+        $('.bottom_close').removeClass('cc-first-close');
+        $('.jigsawhealth-20765152 .second_step_20765152').show();
+      } else {
+        isSpin = true;
+        $('.jigsawhealth-20765152 .first_step_20765152').hide();
+        $('.right_textarea').removeClass('cc-first-page');
+        $('.bottom_close').removeClass('cc-first-close');
+        $('.jigsawhealth-20765152 .second_step_20765152').show();
+        $('.spin_wheel_sec_inner').css('transition', 'all 0s cubic-bezier(0,.99,.44,.99) !important');
+        $('.spin_wheel_sec_inner').css('transform', 'rotate(333deg)');
+      }
+    });
+  $('.submit-btn btnDisable').on('click', () => {
+    $('.close_text').hide();
+  });
+  $('.shop_now_btn button').on('click', () => {
+    campaign.trigger('clicked.shopnow');
+    campaign.destroy();
+  });
+</script>

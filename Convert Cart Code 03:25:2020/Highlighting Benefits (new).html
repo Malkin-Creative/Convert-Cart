@@ -1,0 +1,104 @@
+<style>
+  .cc-bodybenefit .product-tabs--fixed .tab-title {
+    margin: 0 70px 0 0;
+  }
+  .cc-bodybenefit .product-tabs--fixed .tab-title:last-child {
+    margin-right: 0;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1149px) {
+    .cc-bodybenefit .product-tabs--fixed .tab-title {
+      margin: 0 40px 0 0;
+    }
+    .cc-bodybenefit .product-tabs--fixed .tab-title:last-child {
+      margin-right: 0;
+    }
+  }
+  @media only screen and (min-width: 1050px) and (max-width: 1279px) {
+    .cc-bodybenefit .product-tabs--fixed .tab-title {
+      margin: 0 50px 0 0;
+    }
+    .cc-bodybenefit .product-tabs--fixed .tab-title:last-child {
+      margin-right: 0;
+    }
+  }
+</style>
+<cc-snippet prepend-to="#benefits">
+  <h3 class="text-center product-tab-headline"><span>Benefits</span></h3>
+</cc-snippet>
+<script wait-for=".footer-nav-wrap">
+  // var $ = require('zepto');
+  var $ = window.jQuery;
+  var benefittop;
+  var benefitHeight;
+  var isbenefit = false;
+  var benefitElement;
+  setTimeout(() => {
+    if ($('#benefits').length) {
+      isbenefit = true;
+      $('#benefits > h4').eq(0).addClass('cc-benefit-content');
+      benefittop = $('#benefits > h3').eq(0).offset().top - 120;
+      benefitHeight = $('#benefits > h4').eq(0).outerHeight() + $('#benefits > h4').eq(0).next().height() + 50;
+      benefitElement = $('#benefits > h4').eq(0);
+    } else {
+      $('.product-description > h4').each(function () {
+        var desctitle = $(this).text();
+        if (desctitle.match(/(^|\W)Help Me With($|\W)/) || desctitle.match(/(^|\W)help me with($|\W)/)) {
+          benefittop = $(this).offset().top - 120;
+          benefitHeight = $(this).outerHeight() + $(this).next().height() + 50;
+          isbenefit = true;
+          benefitElement = $(this);
+        }
+      });
+    }
+    if (isbenefit) {
+      $('body').addClass('cc-bodybenefit');
+      $('.main-content > .product-tabs--fixed').eq(0).find('.tabs li').each(function () {
+        if ($(this).find('> a').length) {
+          // $(this).attr('class', 'tab-title cc-' + $(this).find('a').text().trim());
+          $(this).addClass('cc-' + $(this).find('a').text().trim());
+        }
+      });
+      $('.main-content > .product-tabs--fixed').eq(0).find('.cc-Description')
+        .after('<li class="tab-title cc-benefit"><a class="anchor-scroll" href="#product-benefits">Benefits</a></li>');
+      // alert($('.main-content > .product-tabs--fixed').eq(0).find('.tabs li').length);
+      $(window).on('scroll', () => {
+        /* benefittop = $('.product-description > h4 > span').offset().top - 120;
+        benefitHeight = $('.product-description > h4 > span').parent()
+          .outerHeight() + $('.product-description > h4 > span').parent().next().height() + 50; */
+        if ($(window).scrollTop() > benefittop) {
+          $('.main-content > .product-tabs--fixed').eq(0).find('.tabs li.active').removeClass('active');
+          $('.cc-benefit').addClass('active');
+          if ($(window).scrollTop() > (benefittop + benefitHeight)) {
+            $('.cc-benefit').removeClass('active');
+            $('.main-content > .product-tabs--fixed').eq(0).find('.cc-Description')
+              .addClass('active');
+          }
+        } else {
+          $('.cc-benefit').removeClass('active');
+        }
+        if ($(window).scrollTop() > $('#ingredients').offset().top - 10) {
+          $('.main-content > .product-tabs--fixed').eq(0).find('.tabs li.active').removeClass('active');
+          $('.main-content > .product-tabs--fixed').eq(0).find('.cc-Ingredients')
+            .addClass('active');
+        }
+        if ($(window).scrollTop() > $('#product-reviews').offset().top - 10) {
+          $('.main-content > .product-tabs--fixed').eq(0).find('.tabs li.active').removeClass('active');
+          $('.main-content > .product-tabs--fixed').eq(0).find('.cc-Reviews').addClass('active');
+        }
+      });
+      $('.cc-benefit').on('click', () => {
+        $('html, body').animate(
+          {
+            scrollTop: benefitElement.offset().top - 180,
+          },
+          1500,
+        );
+      });
+    }
+    $('.main-content > .product-tabs--fixed').eq(0).find('.tabs li').each(function () {
+      $(this).find('a').on('click', function () {
+        campaign.trigger('Clicked.' + $(this).text().trim());
+      });
+    });
+  }, 3000);
+</script>
